@@ -1,0 +1,26 @@
+baseURL = "https://lawson.cafe"
+disableKinds = ["taxonomy", "term"]
+disableHugoGeneratorInject = true
+disableLiveReload = true
+enableEmoji = true
+languageCode = "en"
+removePathAccents = true
+timeZone = "UTC"
+
+[build]
+  useResourceCacheWhen = "fallback"
+
+[imaging]
+  [imaging.exif]
+    disableLatLong = true
+
+[markup]
+  [marukup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true # Needed for <br/> in documents.
+
+[minify]
+  disableHTML = true # Minute difference
+
+[permalinks]
+  page = "/:filename/"
