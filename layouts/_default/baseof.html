@@ -7,6 +7,7 @@
     {{ $sass := resources.Get "sass/style.scss" }}
     {{ $style := $sass | toCSS $opts | resources.Minify }}
     <link href="{{ $style.Permalink }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,600;0,700;1,400&family=Inter&display=swap&display=swap" rel="stylesheet"> 
     <link rel="icon" href="data:,">
     <title>{{ block "title" .}}Lawson's Cafe{{ end }}</title>
   </head>
