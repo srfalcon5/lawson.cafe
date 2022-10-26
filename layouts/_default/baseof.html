@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ $opts := (dict "targetPath" "/style.css" "outputStyle" "compressed") }}
+    {{ $sass := resources.Get "sass/style.scss" }}
+    {{ $style := $sass | toCSS $opts | resources.Minify }}
+    <link href="{{ $style.Permalink }}" rel="stylesheet">
+    <link rel="icon" href="data:,">
+    <title>{{ block "title" .}}Lawson's Cafe{{ end }}</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Lawson's Cafe</a></h1>
+    </header>
+    <div id="banner"><p>15% de réduction sur toute l'eau pour notre grande ouverture!</p></div>
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+    <footer>
+      <nav>
+        <a href="/menu">Menu</a>&nbsp;<a href="/a-propos">À propos</a>
+      </nav>
+      <hr/>
+      <p>&copy; 2022 Lawson's Cafe. Pas un café actuallement.</p>
+    </footer>
+  </body>
+</html>
