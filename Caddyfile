@@ -9,7 +9,7 @@ lawson.cafe {
 	header Expect-CT "max-age=86400, enforce"
   	header Cross-Origin-Opener-Policy "same-origin; report-to='mailto:security@doamatto.xyz'"
   	header Cross-Origin-Embedder-Policy "require-corp; report-to='mailto:security@doamatto.xyz'"
-	header Content-Security-Policy "default-src 'none'; style-src 'self'; img-src 'self'; font-src 'none'; form-action 'none'; upgrade-insecure-requests; block-all-mixed-content; object-src 'none'; connect-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+	header Content-Security-Policy "default-src 'none'; style-src 'self' https://fonts.googleapis.com; img-src 'self'; font-src https://fonts.gstatic.com; form-action 'none'; upgrade-insecure-requests; block-all-mixed-content; object-src 'none'; connect-src 'none'; base-uri 'self'; frame-ancestors 'none'"
 
 	# 404 redirects
 	handle_errors {
