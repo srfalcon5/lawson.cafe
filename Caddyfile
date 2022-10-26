@@ -1,0 +1,33 @@
+lawson.cafe {
+	header Cache-Control "max-age=31536000"
+	header Permissions-Policy "interest-cohort=(), browsing-topics=(), join-ad-interest-group=(), run-ad-auction=()"
+	header X-Content-Type-Options "nosniff"
+	header X-Frame-Options "DENY"
+	header Referrer-Policy "no-referrer"
+	header Strict-Transport-Security "max-age=31536000;includeSubDomains;preload"
+	header Vary "Origin"
+	header Expect-CT "max-age=86400, enforce"
+  	header Cross-Origin-Opener-Policy "same-origin; report-to='mailto:security@doamatto.xyz'"
+  	header Cross-Origin-Embedder-Policy "require-corp; report-to='mailto:security@doamatto.xyz'"
+	header Content-Security-Policy "default-src 'none'; style-src 'self'; img-src 'self'; font-src 'none'; form-action 'none'; upgrade-insecure-requests; block-all-mixed-content; object-src 'none'; connect-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+
+	# 404 redirects
+	handle_errors {
+	rewrite * /404.html
+	encode zstd gzip
+		file_server {
+		  precompressed br
+		}
+	}
+
+	root * /srv/apps/caddy/sites/lawson.cafe/public
+	encode zstd gzip
+	file_server {
+		precompressed br
+	}
+}
+
+www.lawson.cafe {
+	encode zstd gzip
+	redir https://lawson.cafe{uri}
+}
