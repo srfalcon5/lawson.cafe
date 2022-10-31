@@ -1,3 +1,3 @@
 +++
-title= "Lawson's Cafe"
+title= "Lawson's Café"
 +++
