@@ -4,7 +4,7 @@ title= "À propos"
 
 ## À propos
 
-En 2022, Lawson a décidé de prendre un décision audacieuse et de démissionner comme directeur. Il a déclaré qu'il passerait plutôt d'un salarie de plus de 200 000 USD à 2 USD, en lançant son entreprise de rêve: Lawon's Café.
+En 2022, Lawson a décidé de prendre un décision audacieuse. Il a déclaré qu'il passerait plutôt d'un salarie de plus de 200 000 USD à 2 USD, en lançant son entreprise de rêve: Lawon's Café.
 
 Depuis, il est vendu au personnel de le lycée Scripps Ranch et a produit à lui seul chaque produit. Il est surtout connu, pas pour son café, mais son Pâtisserie de la semaine, où il a offert une quantité préoccupante de variété et livré rien mais le meilleur.
 
