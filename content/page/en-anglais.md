@@ -3,4 +3,4 @@ title= "En anglais"
 +++
 
 ## For English speakers / En anglais
-We are currently unable to provide a correct and accurate translation for any pages. Lawson's Cafe are French-speaking and cannot provide support or autre help in English. We suggest the use of translation services.
+We are unable currently to provide correct and precise translation for any pages. We suggest use the services of translation.
