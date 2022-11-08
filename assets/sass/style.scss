@@ -6,7 +6,6 @@ html {
 	font-size: 1.075rem;
 	font-family: "Cormorant", serif;
 }
-
 body {
 	height: 100vh;
 	max-height: 100%;
@@ -44,6 +43,17 @@ main {
 	h1,
 	h2 { margin: .5rem 0 0; }
 	p { margin-top: 0; }
+}
+.btn {
+	background: #3c302c;
+	color: white;
+	font-family: "Inter", sans-serif;
+	text-decoration: none;
+	padding: 8px 16px;
+	border-radius: 12px;
+	font-size: .8rem;
+	font-weight: 700;
+	line-height: 15px;
 }
 main,
 footer {
@@ -86,9 +96,33 @@ footer {
 		font-family: serif;
 	}
 }
-.article.lg { width: 85%; }
+.article.lg,
+.article.xs { width: 85%; }
 .article.sm {
 	max-width: 35%;
 	width: 100%;
 }
+.article.xs {
+	flex-direction: row;
+	justify-content: space-between;
+	justify-items: center;
+	align-items: center;
+	padding: 16px;
+	.titre {
+		font-size: 24px;
+		margin: 0;
+	}
+}
+#ordernow {
+	background: #231F20;
+	color: #fff;
+}
+#holidays, #coffee, #principal {
+	background: #000;
+	align-items: flex-start;
+	color: #fff;
+}
+#holidays { background-image: url("https://lawson.cafe/img/holidays.jpg");;}
+#coffee { background-image: url("https://lawson.cafe/img/coffee.jpg"); }
+#principal { background-image: url("https://lawson.cafe/img/principal.jpg");}
 
